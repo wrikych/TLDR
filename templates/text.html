@@ -1,0 +1,9 @@
+{% extends "layout.html" %} 
+{% block content %} 
+<p> 
+    <form method='POST' action="{{ url_for('text_results') }}"> 
+        Text: <textarea name="text" id="text" cols="30" rows="10"></textarea>  number of sentences:  <input type="int", name='num_sents', placeholder="number of sentences"> 
+        <input type="submit" , value='post it yo' > 
+    </form> 
+</p> 
+{% endblock content %}

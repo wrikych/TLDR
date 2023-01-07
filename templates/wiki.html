@@ -1,0 +1,9 @@
+{% extends "layout.html" %} 
+{% block content %} 
+<p> 
+    <form method='POST' action="{{ url_for('wiki_results') }}"> 
+        URL: <input type="text", name='url', placeholder="enter a URL">  number of sentences:  <input type="int", name='num_sents', placeholder="number of sentences"> 
+        <input type="submit" , value='post it yo' > 
+    </form> 
+</p> 
+{% endblock content %}

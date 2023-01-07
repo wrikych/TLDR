@@ -1,0 +1,8 @@
+{% extends "layout.html" %} 
+{% block content %} 
+    <ul>  
+        {% for sentence in sentences: %}  
+        <li>{{ sentence }}</li>  
+        {% endfor %}  
+    </ul>  
+{% endblock content %}
